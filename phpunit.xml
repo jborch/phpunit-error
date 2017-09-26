@@ -1,0 +1,9 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="Unit Tests">
+            <directory suffix="Test.php">src/Component/**/Tests</directory>
+            <!--<exclude>src/Component/Bar</exclude> No tests are excluded -->
+            <exclude>src/Component/Bar/**</exclude> <!-- Warning: strpos(): Empty needle in... No tests are excluded -->
+        </testsuite>
+    </testsuites>
+</phpunit>
